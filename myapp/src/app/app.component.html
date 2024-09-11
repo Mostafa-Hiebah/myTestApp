@@ -1,0 +1,13 @@
+<div>
+  <input [(ngModel)]="inputData" placeholder="Enter data" />
+  <button (click)="submitData()">Submit</button>
+  <br><br><br>
+  <select>
+    <option *ngFor="let item of dropdownData" [value]="item.id">
+      {{ item.name }}
+    </option>
+  </select>
+</div>
+
+
+<router-outlet />
